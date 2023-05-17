@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <ul class="navBar">
+            <li id="logo">Library</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contacts">Contacts</a><li>
+        </ul>
+        <button id="new">+</button>
+        <div class="bookShelf" id="home">
+            <div class="books">
+                <div class="book">
+                    <p><b>Name:</b> Harry Potter</p>
+                    <p><b>Author:</b> J.K. Rowling</p>
+                    <p><b>Pages:</b> 250</p>
+                    <p><b>Status:</b> Read</h3>
+                    <p><b>Update Status</b></p>
+                    <p><b>Delete</b></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="popUpForm">
+            <div class="formHead">
+                <div>New Book</div>
+                <div id="modal">X</div>
+            </div>
+            <form id="form">
+                <label for="title">Title: </label><br>
+                <input type="text" id="title" placeholder="Harry Potter" name="title" required autocomplete="off"><br>
+                <label for="author">Author: </label><br>
+                <input type="text" id="author" placeholder="J.K. Rowling" name="author" required autocomplete="off"><br>
+                <label for="pages">Pages: </label><br>
+                <input type="number" id="pages" placeholder="250" name="pages" required autocomplete="off"><br>
+                <label for="status">Status:</label>
+                <select name="status" id="status" name="status" required autocomplete="off">
+                    <option value="read" selected>Already read</option>
+                    <option value="not_read">Not Read yet</option>
+                </select>
+                <input type="submit" value="Submit"/>
+            </form>
+        </div> 
+        <footer id="contacts" >
+            Made with <span style="color: white; margin-left: 5px;margin-right: 5px;">&#9829;</span> by <a href="https://www.facebook.com/safin.20050601" target="_blank" >Safin</a>
+        </footer>
+    </div>
+</body>
+</html>
