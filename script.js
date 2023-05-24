@@ -21,12 +21,15 @@ function formClose() {
   formStatus = "close";
 }
 
-function BookInfo(name, author, pages, status) {
-  this.name = name;
-  this.author = author;
-  this.pages = pages;
-  this.status = status;
+class BookInfo{
+  constructor(name, author, pages, status){
+    this.name = name;
+    this.author = author;
+    this.pages = pages;
+    this.status = status;
+  } 
 }
+
 
 function addBook(i) {
   let bookNode = document.createElement("div");
