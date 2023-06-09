@@ -67,15 +67,15 @@ function getBooks() {
     let bookNode = document.createElement("div");
     bookNode.classList.add("book");
 
-    const title = document.getElementById("title").value;
+    // const title = document.getElementById("title").value;
     let titleNode = document.createElement("p");
     titleNode.innerHTML = `Title: ${book.title}`;
 
-    const author = document.getElementById("author").value;
+    // const author = document.getElementById("author").value;
     let authorNode = document.createElement("p");
     authorNode.innerHTML = `Author: ${book.author}`;
 
-    const pages = document.getElementById("pages").value;
+    // const pages = document.getElementById("pages").value;
     let pageNode = document.createElement("p");
     pageNode.innerHTML = `Pages: ${book.pages}`;
 
